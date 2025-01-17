@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Work Sans", serif;
+    font-style: normal;
+}
+
+/* shared styles for all body */
+
+.bold_title{
+    font-weight: 700;
+    font-size: 2.8em;
+    line-height: 53px;
+    color: rgb(19, 19, 19);
+}
+
+.shared_button{
+    padding: 20px 24px;
+    border-radius: .5rem;
+    background-color: rgb(255, 144, 14);
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* header start with nav */
+
+header{
+    background: rgba(255, 144, 14, 0.1);
+    margin-bottom: 45px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 230px;
+    margin-bottom: 7.25rem;
+}
+
+.logo{
+    margin-top: 50px;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+nav ul li{
+    /* display: inline-block; */
+    list-style: none;
+    margin-right: 30px;
+    margin-top: 60px;
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 2.5em;
+}
+
+.header_textarea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.1rem;
+}
+
+.header_textarea .header_title{
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4.6rem;
+    color: rgb(19, 19, 19);
+    text-align: center;
+    margin-bottom: 1.8rem;
+}
+
+.header_description{
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: rgb(114, 114, 114);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+.banner_image{
+    text-align: center;
+}
+
+
+/* header and nav responsive in mobile and tablet */
+
+@media screen and (max-width: 576px) {
+    nav{
+        flex-direction: column;
+    }
+
+    nav ul{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
+        margin: 0;
+    }
+
+    .banner_image{
+        width: 100%;
+    }
+
+    .banner_image img{
+        width: 100%;
+    }
+
+}
+
+
+
+/* header and nav end */
+
+/* our features section start */
+
+main > .our_features{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    gap: 64px;
+}
+
+.features_images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.features_textarea{
+    font-size: 2.8rem;
+}
+
+.simple_text{
+    font-weight: 500;
+    line-height: 1px;
+    color: rgb(114, 114, 114);
+}
+
+.little_bold{
+    font-weight: 700;
+    line-height: 1px;
+    color: rgb(19, 19, 19);
+}
+
+.color_text{
+    color: rgb(255, 144, 14);
+}
+
+
+
+/* responsive in mobile and tablet */
+
+@media screen and (max-width: 576px) {
+
+    .our_features{
+        flex-direction: column;
+    }
+
+    .features_images{
+        grid-template-columns: 1fr;
+    }
+
+    .features_textarea{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .color_text{
+        margin-left: 100px;
+    }
+}
+
+/* our features section end */
