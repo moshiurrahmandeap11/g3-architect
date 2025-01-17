@@ -1,26 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Work Sans", serif;
     font-style: normal;
 }
 
 /* shared styles for all body */
 
-.bold_title{
+.bold_title {
     font-weight: 700;
     font-size: 2.8em;
     line-height: 53px;
     color: rgb(19, 19, 19);
 }
 
-.shared_button{
+.shared_button {
     padding: 20px 24px;
     border-radius: .5rem;
     background-color: rgb(255, 144, 14);
@@ -36,12 +36,12 @@ body{
 
 /* header start with nav */
 
-header{
+header {
     background: rgba(255, 144, 14, 0.1);
     margin-bottom: 45px;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,16 +50,16 @@ nav{
     margin-bottom: 7.25rem;
 }
 
-.logo{
+.logo {
     margin-top: 50px;
 }
 
-nav ul{
+nav ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
 
-nav ul li{
+nav ul li {
     /* display: inline-block; */
     list-style: none;
     margin-right: 30px;
@@ -69,7 +69,7 @@ nav ul li{
     line-height: 2.5em;
 }
 
-.header_textarea{
+.header_textarea {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,7 +77,7 @@ nav ul li{
     margin-bottom: 3.1rem;
 }
 
-.header_textarea .header_title{
+.header_textarea .header_title {
     font-weight: 700;
     font-size: 4rem;
     line-height: 4.6rem;
@@ -86,7 +86,7 @@ nav ul li{
     margin-bottom: 1.8rem;
 }
 
-.header_description{
+.header_description {
     font-weight: normal;
     font-size: 1rem;
     line-height: 1.6rem;
@@ -96,7 +96,7 @@ nav ul li{
 }
 
 
-.banner_image{
+.banner_image {
     text-align: center;
 }
 
@@ -104,25 +104,25 @@ nav ul li{
 /* header and nav responsive in mobile and tablet */
 
 @media screen and (max-width: 576px) {
-    nav{
+    nav {
         flex-direction: column;
         margin: 0 auto;
     }
 
-    nav ul{
+    nav ul {
         grid-template-columns: repeat(2, 1fr);
         margin-left: 50px;
     }
 
-    .banner_image{
+    .banner_image {
         width: 100%;
     }
 
-    .banner_image img{
+    .banner_image img {
         width: 100%;
     }
 
-    .header_description{
+    .header_description {
         margin-left: 15px;
         text-align: center;
     }
@@ -135,38 +135,39 @@ nav ul li{
 
 /* our features section start */
 
-main > .our_features{
+main>.our_features {
     display: flex;
     justify-content: space-around;
     align-items: center;
     max-width: 1440px;
     margin: 0 auto;
     gap: 64px;
+    margin-bottom: 130px;
 }
 
-.features_images{
+.features_images {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
 
-.features_textarea{
+.features_textarea {
     font-size: 2.8rem;
 }
 
-.simple_text{
+.simple_text {
     font-weight: 500;
     line-height: 1px;
     color: rgb(114, 114, 114);
 }
 
-.little_bold{
+.little_bold {
     font-weight: 700;
     line-height: 1px;
     color: rgb(19, 19, 19);
 }
 
-.color_text{
+.color_text {
     color: rgb(255, 144, 14);
 }
 
@@ -176,29 +177,138 @@ main > .our_features{
 
 @media screen and (max-width: 576px) {
 
-    .our_features{
+    .our_features {
         flex-direction: column;
     }
 
-    .features_images{
+    .features_images {
         grid-template-columns: 1fr;
     }
 
-    .features_textarea{
+    .features_textarea {
         font-size: 2rem;
     }
 
-    .features_textarea{
+    .features_textarea {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .color_text{
+    .color_text {
         margin-left: 70px;
         margin-bottom: 5px;
     }
 }
 
 /* our features section end */
+
+/* feature love and enjoy section start */
+
+.flae {
+    max-width: 1440px;
+    max-height: 1059px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    gap: 92px;
+    margin: 0 240px;
+    margin-bottom: 130px;
+}
+
+.flae_title{
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+    color: rgb(19, 19, 19);
+    text-align: left;
+    border-left: 5px solid rgb(255, 144, 14);
+    padding-left: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.flae_div {
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    padding: 1.9rem 2.6rem 1.9rem 1.9rem;
+}
+
+.flae_heading{
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+    color: rgb(19, 19, 19);
+    text-align: left;
+    margin-bottom: .6rem;
+}
+
+.flae_description{
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: rgb(114, 114, 114);
+    text-align: left;
+}
+
+#experience_badge{
+    padding: 45px 42px;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+
+.big-text{
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4.3rem;
+    color: rgb(255, 255, 255);
+}
+
+.tiny_text{
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: rgb(255, 255, 255);
+}
+
+/* responsive for mobile and tablet */
+
+@media screen and (max-width: 576px) {
+    .flae{
+        flex-direction: column;
+    }
+
+    .flae_title{
+        margin-right: 90px;
+    }
+
+    .flae_description{
+        margin-right: 70px;
+        font-size: 25px;
+    }
+
+    .flae_div{
+        margin-left: -30px;
+    }
+
+    .flae_heading{
+        margin-bottom: 40px;
+    }
+
+    .flae_image img{
+        width: 100%;
+        margin-left: -30px;
+    }
+
+    #experience_badge{
+        margin-top: 20px;
+        margin-left: -50px;
+    }
+}
