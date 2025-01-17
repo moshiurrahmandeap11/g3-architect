@@ -111,8 +111,7 @@ nav ul li{
 
     nav ul{
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 40px;
-        margin: 0;
+        margin-left: 50px;
     }
 
     .banner_image{
@@ -121,6 +120,11 @@ nav ul li{
 
     .banner_image img{
         width: 100%;
+    }
+
+    .header_description{
+        margin-left: 15px;
+        text-align: center;
     }
 
 }
