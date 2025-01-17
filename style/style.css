@@ -106,6 +106,7 @@ nav ul li{
 @media screen and (max-width: 576px) {
     nav{
         flex-direction: column;
+        margin: 0 auto;
     }
 
     nav ul{
@@ -180,6 +181,10 @@ main > .our_features{
     }
 
     .features_textarea{
+        font-size: 2rem;
+    }
+
+    .features_textarea{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -187,7 +192,8 @@ main > .our_features{
     }
 
     .color_text{
-        margin-left: 100px;
+        margin-left: 70px;
+        margin-bottom: 5px;
     }
 }
 
