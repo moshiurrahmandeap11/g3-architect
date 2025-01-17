@@ -183,6 +183,7 @@ main>.our_features {
 
     .features_images {
         grid-template-columns: 1fr;
+        margin: 4px 10px;
     }
 
     .features_textarea {
@@ -289,10 +290,10 @@ main>.our_features {
         margin-right: 90px;
     }
 
-    .flae_description{
+    /* .flae_description{
         margin-right: 70px;
         font-size: 25px;
-    }
+    } */
 
     .flae_div{
         margin-left: -30px;
@@ -309,6 +310,6 @@ main>.our_features {
 
     #experience_badge{
         margin-top: 20px;
-        margin-left: -50px;
+        margin-left: -80px;
     }
 }
