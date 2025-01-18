@@ -183,7 +183,7 @@ main>.our_features {
 
     .features_images {
         grid-template-columns: 1fr;
-        margin: 4px 10px;
+        /* margin: 4px 10px; */
     }
 
     .features_textarea {
@@ -219,7 +219,7 @@ main>.our_features {
     margin-bottom: 130px;
 }
 
-.flae_title{
+.flae_title {
     font-weight: 700;
     font-size: 2.8rem;
     line-height: 3.4rem;
@@ -242,7 +242,7 @@ main>.our_features {
     padding: 1.9rem 2.6rem 1.9rem 1.9rem;
 }
 
-.flae_heading{
+.flae_heading {
     font-weight: 600;
     font-size: 1.3rem;
     line-height: 1.4rem;
@@ -251,7 +251,7 @@ main>.our_features {
     margin-bottom: .6rem;
 }
 
-.flae_description{
+.flae_description {
     font-weight: normal;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -259,20 +259,20 @@ main>.our_features {
     text-align: left;
 }
 
-#experience_badge{
+#experience_badge {
     padding: 45px 42px;
     margin-left: -100px;
     margin-top: -100px;
 }
 
-.big-text{
+.big-text {
     font-weight: 700;
     font-size: 4rem;
     line-height: 4.3rem;
     color: rgb(255, 255, 255);
 }
 
-.tiny_text{
+.tiny_text {
     font-weight: 500;
     font-size: 1.5rem;
     line-height: 2.5rem;
@@ -282,34 +282,30 @@ main>.our_features {
 /* responsive for mobile and tablet */
 
 @media screen and (max-width: 576px) {
-    .flae{
+    .flae {
         flex-direction: column;
+        margin: 0 20px;
     }
 
-    .flae_title{
+    .flae_title {
         margin-right: 90px;
     }
 
-    /* .flae_description{
-        margin-right: 70px;
-        font-size: 25px;
-    } */
-
-    .flae_div{
+    .flae_div {
         margin-left: -30px;
     }
 
-    .flae_heading{
+    .flae_heading {
         margin-bottom: 40px;
     }
 
-    .flae_image img{
+    .flae_image img {
         width: 100%;
         margin-left: -30px;
     }
 
-    #experience_badge{
+    #experience_badge {
         margin-top: 20px;
-        margin-left: -80px;
+        margin-left: 15px;
     }
 }
